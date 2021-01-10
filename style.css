@@ -1,0 +1,425 @@
+html {
+    scroll-behavior: smooth;
+  }
+header { grid-area: header; }
+main { grid-area: main; }
+.contact_info { grid-area: contact; }
+.contact{grid-area: contact_us}
+footer { grid-area: footer; }
+
+body{
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-areas:
+      'header header header header header header header'
+      'main main main main contact contact contact'
+      'contact_us contact_us contact_us contact_us contact_us contact_us contact_us' 
+      'footer footer footer footer footer footer footer ';
+}
+@media screen and (max-width: 1140px) {
+    body {
+        margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-areas:
+      'header header header header header header header'
+      'main main main main main main main'
+      'contact contact contact contact contact contact contact'
+      'contact_us contact_us contact_us contact_us contact_us contact_us contact_us' 
+      'footer footer footer footer footer footer footer ';
+    }
+    nav li  .a{
+        font-size: 18px;
+        padding:15px 5px; 
+    }
+    .contact_info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact_info h2{
+        display: none;
+    }
+    .scroll-top img{
+        left: 90%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .top_nav a {
+        display: none;
+    }
+    nav .Dd-icon,nav .Dd-icon img{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .top_nav.responsive {position: relative;}
+  .top_nav.responsive a.Dd-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top_nav.responsive .a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .main-logo{
+        display: none;
+    }
+    #first-image{
+        display: none;
+    }
+
+} 
+body > .home {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+}
+header{
+    position: relative;
+}
+.logo-img{
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home-logo{
+    display: none;
+}
+.company-name img{
+    height: 80px;
+}
+
+.Dd-icon,.Dd-icon img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #059631;
+    box-shadow: 0 15px 20px #bebebe;
+}
+nav li  a{
+    font-size: 23px;    
+    float:left;    
+    text-decoration: none; 
+    color: #eeeeee; 
+    padding: 15Px;
+
+}
+nav li a:hover {
+    background:#eeeeee;
+    color: #059631;
+}
+main{
+    text-align: center;
+    margin-left: 20px;
+}
+.main-get{
+    display: flex;
+    justify-content: center;
+
+}
+#first-image{
+    width: 700px;
+    height: 500px;
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.image img{
+    width: 350px;
+    height: 350px;
+}
+
+.image .cont{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.join{
+    margin-left: 100px;
+}
+.join button{
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #059631;
+    color: #ffffff;
+}
+.join button:hover{
+    background-color: #ffffff;
+    color: #059631;
+    border:1px solid #059631;
+}
+/* image view style */
+
+.textView{
+    transform: translate(50%,500%);
+    transition-duration: 0.4s;
+    color: black; 
+}
+
+.image .cont p{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    background-color: #008127;
+}
+
+.contact_info{
+    text-align: center; 
+    background-color: #d8d8d8;
+    margin: 0px;
+    padding: 30px;
+}
+
+.contact_info a{
+    font-size: 10px;
+}
+.contact{
+    background-color: #b9ddb4;
+    text-align: center;
+}
+.contact .contact-name{
+    font-size: 40px;
+    padding-top: 20px; 
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.contact-us input{
+    background-color: #b9ddb4;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    margin: 15px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-bottom: 1.5px solid rgb(61, 60, 60);
+    outline: none;
+}
+
+.contact-us textarea{
+    background-color: #b9ddb4;
+    padding: 5px;
+    width: 400px;
+    height: 150px;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+}
+.contact-us input:focus , .contact-us textarea:focus{
+    border-bottom: 1px solid #727272;
+}
+.contact-us #message {
+    background: #ffffff;
+    cursor: pointer;
+    width: 150px;
+    border-radius:5px;
+    border: none; 
+    margin-top:36px; 
+    margin-left:33%; 
+}
+.contact-us #message:hover{
+    color: #ffffff;
+    background: #059631;
+    box-shadow: 5px 4px 9px #727272;
+}
+.scroll-top img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    box-shadow: 0px 5px 11px #727272;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom: 90px;
+    right: 325px;
+}
+.scroll-top img:hover{
+    background-color: #008127;
+}
+footer .copyright{
+    font-size: 15px;
+    padding: 1px;
+    text-align: center;
+    background-color: #5ca76c;
+}
+
+/* about us style */
+
+.about{
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+}
+
+/* product style */
+
+.product{
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.product-list{
+  text-align: left;
+  font-size: 20px;
+  margin-left:30px;
+}
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+}
+
+/* technology style */
+.title{
+    text-align: left;
+    padding: 15px;
+}
+.contianer{
+    display: flex;
+    flex-wrap:wrap;
+}
+.tech{
+    text-align: left;
+    font-size: 15px;
+    width: 350px;
+    margin: 40px;
+}
+/* popup content for login */
+.model{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+}
+.model .content{
+    width: 500px;
+    height: 300px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.model .content img{
+    width: 100px;
+    height: 100px;
+}
+.model .content input{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+
+}
+.model .content .submit{
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: seashell;
+    background-color: rgb(0, 122, 53);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.model .content .submit:hover{
+    background-color: seashell;
+    color: rgb(0, 122, 53);
+    border: 1px solid rgb(0, 122, 53);
+}
+.model .content .close{
+    position: absolute;
+    top: 0%;
+    left: 93%;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+/* popup content for signin */
+.s-model{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+}
+.s-model .content{
+   width: 500px;
+    height: 300px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.s-model .content p{
+    font-size: 30px;
+}
+.s-model .content input{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+.s-model .content .submit{
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: seashell;
+    background-color: rgb(0, 122, 53);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.s-model .content .submit:hover{
+    background-color: seashell;
+    color: rgb(0, 122, 53);
+    border: 1px solid rgb(0, 122, 53);
+}
+.s-model .content .s-close{
+    position: absolute;
+    top: 0%;
+    left: 93%;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
